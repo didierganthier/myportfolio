@@ -63,17 +63,11 @@ const didier = new THREE.Mesh(
 scene.add(didier);
 
 const moonTexture = new THREE.TextureLoader().load('moon.jpeg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpeg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
-  new THREE.MeshStandardMaterial({ 
-    map: moonTexture,
-    normalMap: normalTexture,
-  })
+  new THREE.MeshStandardMaterial({ map: moonTexture })
 );
-
-scene.add(moon);
 
 
 function animate () {
