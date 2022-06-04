@@ -53,7 +53,7 @@ const spaceTexture = new THREE.TextureLoader().load('images/space.jpeg');
 scene.background = spaceTexture;
 
 //Avatar
-const didierTexture = new THREE.TextureLoader().load('images/didier.jpeg');
+const didierTexture = new THREE.TextureLoader().load('didier.jpeg');
 
 const didier = new THREE.Mesh(
   new THREE.BoxGeometry(3, 3, 3),
@@ -62,8 +62,8 @@ const didier = new THREE.Mesh(
 
 scene.add(didier);
 
-const moonTexture = new THREE.TextureLoader().load('images/moon.jpeg');
-const normalTexture = new THREE.TextureLoader().load('images/normal.jpeg');
+const moonTexture = new THREE.TextureLoader().load('moon.jpeg');
+const normalTexture = new THREE.TextureLoader().load('normal.jpeg');
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
